@@ -11,20 +11,20 @@ var Dog = function Dog(options) {
   this.color = options.color;
   this.status = 'normal';
   this.hungry = options.hungry !== undefined ? options.hungry : true;
-  this.owner = options.owner;
 };
 
 var Human = function Human(options) {
 
   options = options || {};
 
-  this.status = options.status;
   this.pet = function () {
     return sadie.status = 'happy';
   };
+
   this.feed = function (dog) {
     dog.hungry = false;
   };
+
   this.cool = options.cool !== undefined ? options.cool : false;
 };
 
